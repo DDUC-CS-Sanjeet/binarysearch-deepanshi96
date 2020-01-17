@@ -47,9 +47,9 @@ bool binarySearchRecursive(int* array, int startIndex, int lastIndex, int elemen
     if(array[mid]==element)
        return true;
     if (array[mid]<element)
-       return binarySearchReacursive(array,mid,lastIndex,element);
+       return binarySearchRecursive(array,mid,lastIndex,element);
     else if (array[mid]>element)
-       return binarySearch Reacursive(array,startIndex,mid,element);
+       return binarySearchRecursive(array,startIndex,mid,element);
 	
   return false;
  }
@@ -84,9 +84,9 @@ int main()
   }
 	
 if(result==true)
-	cout<<"\n <<num<<"is present in the given array";
+	cout<<"\n "<<num<<"is present in the given array";
 else if(result==false)
-	cout<<"\n <<num<<"is not present in the given array:";
+	cout<<"\n "<<num<<"is not present in the given array:";
   return 0;
 }
 
